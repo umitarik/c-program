@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+void degistir(int *a,int *b)
+{
+  int terim=*a;
+  *b=*a;
+  *b=terim;
+}
+int main()
+{
+
+int a=5;
+int b=6;
+
+degistir(&a,&b)
+printf("degistikten sonra a=%d b=%d",a,b);
+
+}
